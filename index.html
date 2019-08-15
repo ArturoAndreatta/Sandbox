@@ -17,13 +17,30 @@
         background-color: #fff;
         color: #444;
     }
+
+    table,
+    th,
+    td,
+    tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    th {
+        background-color: aqua
+    }
+    h1,h2,h3,h4,h5,pre,a,p{
+        margin-left: 10px;
+    }
 </style>
 
 <body style="background-color: blueviolet" background="">
     <div class="wrapper"
         style="border-style:solid;border-radius: 2px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)">
         <h1 id="ancora2"
-            style="width: 150px;height: 150px;background-color: green;border-style:solid;border-radius: 2px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)">
+            style="margin-width: 150px;height: 150px;background-color: green;border-style:solid;border-radius: 2px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)">
             H1
         </h1>
         <h2
@@ -110,6 +127,37 @@ TESTANDO
         <p></p>
         <p id="ancora">oi gatinho</p><br>
         <a href="#ancora2">IR PRA CIMA</a>
+        <table>
+            <tr>
+                <th>eae</th>
+                <th>eae</th>
+                <th>eae</th>
+            </tr>
+            <tr>
+                <td>eae</td>
+                <td>eae</td>
+                <td>eae</td>
+            </tr>
+            <tr>
+                <td>eae</td>
+                <td>eae</td>
+                <td>eae</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">wow</th>
+                <th>wow</th>
+            </tr>
+            <tr>
+                <td rowspan="2">wow</td>
+                <td colspan="2">wow</td>
+            </tr>
+            <tr>
+                <td colspan="2">wow</td>
+            </tr>
+        </table>
     </div>
 </body>
 
