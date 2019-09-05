@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    h1 {
+        background-color: red;
+        width: 5%;
+        transition: all .50s ease-in-out;
+    }
+
+    h1:hover {
+        background-color: blue;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: mediumorchid
+    }
+
+    p {
+        background-color: mediumorchid
+    }
+
+    p:first-child {
+        background-color: blue
+    }
+
+    p:last-child {
+        background-color: green
+    }
+
+    p:first-letter {
+        font-size: 30px;
+    }
+
+    p::selection {
+        background-color: powderblue
+    }
+
+    p:nth-child(odd) {
+        color: darkorange;
+    }
+
+    p:nth-child(even) {
+        color: darkblue;
+    }
+
+    p::before {
+        content: "###"
+    }
+
+    p::after {
+        content: "%%%"
+    }
+
+    input[name="texto"] {
+        width: 400px;
+    }
+
+    input[type="email"] {
+        width: 500px;
+    }
+
+    input:focus {
+        height: 200px;
+    }
+</style>
+
+<body>
+    <h1>EAE</h1>
+    <li href="#"><a href="">Jaraguá do Sul</a></li>
+    <li href="#"><a href="">Joinville</a></li>
+    <li href="#"><a href="">Blumenau</a></li>
+    <p>Paragráfo 1</p>
+    <p>Paragráfo 2</p>
+    <p>Paragráfo 3</p>
+
+    <form action="#">
+        <input type="text" name="texto"> <br><br>
+        <input type="email" name="email">
+    </form>
+</body>
+
+</html>
