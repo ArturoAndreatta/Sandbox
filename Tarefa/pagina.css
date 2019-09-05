@@ -1,0 +1,37 @@
+p:nth-child(odd) {
+    color: red;
+    background-color: blue
+}
+
+p:nth-child(even) {
+    color: blue;
+    background-color: red;
+}
+
+p:first-child {
+    text-align: center;
+}
+
+p:last-child {
+    text-align: center;
+}
+
+p:nth-child(5) {
+    text-align: center;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+strong {
+    background-color: green;
+}
+
+em {
+    font-size: 20;
+}
+
+strong em {
+    color: purple;
+}
