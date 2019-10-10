@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Olá Mundo</h1>
+
+    <h2>Eventos</h2>
+    <button id="esc">Esconder</button>
+    <button id="exb">Exibir</button>
+
+    <img id="ima" style="width:250px;height:250px;"
+        src="https://wp-content.bluebus.com.br/wp-content/uploads/2017/07/17215406/Winnie-the-Pooh-Hd-wallpaper-21753676.jpg">
+    <button id="trocar">Trocar</button>
+    <!-- JavaScript no final do body para otimizar o carregamento -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$("h1").hide()
+            //$("h1").show()
+            $("#esc").click(function () {
+                $("h1").hide()
+            })
+            $("#exb").click(function () {
+                $("h1").show()
+            })
+            alert($("h1").text())
+            $("h1").text("Olá todos")
+            $("trocar").click(function () {
+                $("#ima").attr("src", "https://cdnv2.moovin.com.br/inoveadesivos/imagens/produtos/original/totem-display-mesa-ursinho-pooh-tot256-e118c622bbbb4d915ddd85da37cb19d2.jpg");
+            })
+        })
+    </script>
+</body>
+
+</html>

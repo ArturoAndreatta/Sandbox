@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <h1>eae</h1>
+    <button onclick="abrir()">CLICK</button>
+    <script>
+        //open("https://www.google.com", "", "toolbar=no,width=300,height=300")
+        function abrir() {
+            var i;
+            for (i = 0; i < 5; i++) {
+                open("https://www.google.com", "", "toolbar=no,width=300,height=300")
+                i++
+            }
+        }
+        function diversos() {
+            var x = "Desenvolvimento WEB"
+            alert(x.length)
+            alert(x.charAt(5))
+            alert(x.indexOf("WEB"))
+        }
+        function datas() {
+            var data = new Date()
+            var mes = data.getMonth() + 1
+            var dia = data.getDate()
+            var ano = data.getFullYear()
+            var dataAtual = dia + "/" + mes + "/" + ano
+            alert(dataAtual)
+        }
+        function aleatorio(inferior, superior) {
+            numPossibilidades = superior - inferior
+            aleat = Math.random() * numPossibilidades
+            aleat = Math.floor(aleat)
+            return console.log(parseInt(inferior) + aleat)
+        }
+        function fNumber() {
+            var valor = Math.PI
+            var res = valor.toFixed(100) //48,
+            console.log("Resultado: " + res)
+            console.log(res.length)
+        }
+        function fNumberDois() {
+            var n1 = new Number()
+            console.log(n1) //Exibe 0
+            var n2 = new Number("oi")
+            console.log(n2) //Exibe NaN
+            var n3 = new Number("123")
+            console.log(n3) //Exibe 123
+        }
+    </script>
+</body>
+
+</html>
