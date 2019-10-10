@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .azul {
+            color: blueviolet
+        }
+
+        .verm1 {
+            color: crimson;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="h1" class="">Olá mundo</h1>
+    <br>
+    <h1 id="a1">Testes e mais testes</h1>
+
+    <button id="atv" class="btn">Ativar</button>
+    <button id="rem" class="btn">Remover</button>
+    <!-- JavaScript no final do body para otimizar o carregamento -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$("h1").css("color", "pink");
+            //$("#h1").addClass("azul");
+            $("#atv").click(function () {
+                $("#a1").addClass("azul");
+            });
+
+            $("#rem").click(function () {
+                $("#a1").removeClass();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
